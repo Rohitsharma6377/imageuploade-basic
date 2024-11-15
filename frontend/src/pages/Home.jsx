@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchBlogs } from '../features/blog/blogSlice';
-import { Card, CardHeader, CardContent, Button, Pagination } from '@acertinity/ui';
+import { fetchBlogs } from '../feature/blog/blogSlice';
+import { createSlice } from '@reduxjs/toolkit';
+
+// import { Card, CardHeader, CardContent, Button, Pagination } from '@acertinity/ui';
 
 const Home = () => {
   const dispatch = useDispatch();

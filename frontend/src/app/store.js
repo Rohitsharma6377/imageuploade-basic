@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import blogReducer from '../features/blog/blogSlice';
-import authReducer from '../features/auth/authSlice';
-import categoryReducer from '../features/category/categorySlice';
-import tagReducer from '../features/tag/tagSlice';
-import uiReducer from '../features/ui/uiSlice';
+import blogReducer from '../feature/blog/blogSlice';
+import authReducer from '../feature/auth/authSlice';
+import categoryReducer from '../feature/category/categorySlice';
+import tagReducer from '../feature/tag/tagSlice';
+import uiReducer from '../feature/ui/uiSlice';
 
 export const store = configureStore({
   reducer: {

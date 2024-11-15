@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../feature/auth/authSlice';
-import { Button } from '@acertinity/ui';
+import {Button} from '@mui/material'
 
 const Header = () => {
   const dispatch = useDispatch();
