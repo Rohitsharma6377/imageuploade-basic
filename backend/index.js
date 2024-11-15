@@ -1,3 +1,4 @@
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -18,12 +19,12 @@ app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
-app.use('/api/blogs', blogRoutes);
-app.use('/api/auth', authRoutes);
-app.use('/api/categories', categoryRoutes);
-app.use('/api/tags', tagRoutes);
-app.use('/api/comments', commentRoutes);
-app.use('/api/users', userRoutes);
+// app.use('/api/blogs', blogRoutes);
+// app.use('/api/auth', authRoutes);
+// app.use('/api/categories', categoryRoutes);
+// app.use('/api/tags', tagRoutes);
+// app.use('/api/comments', commentRoutes);
+// app.use('/api/users', userRoutes);
 
 
 const PORT = process.env.PORT || 5000;
